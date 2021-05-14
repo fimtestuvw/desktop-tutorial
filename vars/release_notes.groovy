@@ -21,7 +21,7 @@ def call(Map config=[:])
 
 		if (config.changes != "false"){
 			def changeLogSets = currentBuild.changeSets;
-
+			println('inside priting changeSets !!!!')
 			for (change in changeLogSets) {
 				def entries = change.items;
 				for (entry in entries) {
